@@ -27,6 +27,8 @@
         <junit.v>4.12</junit.v>
         <jackson.v>2.8.8</jackson.v>
 
+        <log4j2.v>2.7</log4j2.v>
+
 
     </properties>
 
@@ -78,6 +80,22 @@
             <artifactId>javax.servlet-api</artifactId>
             <version>${servlet.v}</version>
             <scope>provided</scope>
+        </dependency>
+        <!-- log4j.2 -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4j2.v}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j2.v}</version>
+        </dependency>
+        <dependency> <!-- 桥接：告诉Slf4j使用Log4j2 -->
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+            <version>2.2</version>
         </dependency>
     </dependencies>
 
