@@ -18,7 +18,7 @@ public class TestController {
     @RequestMapping(value = "/test")
     @ResponseBody
     public String test(){
-        logger.info("!!!!!!!!!!!!!!!!!!!!!!!!!!!test");
+        logger.info("!!!!!!!!!!!!!!!!!!!!!!!!!!!test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         return "success";
     }
 }

@@ -35,7 +35,7 @@
 		<!--<logger name="java.sql" level="TRACE" additivity="true">-->
 			<!--<AppenderRef ref="console" />-->
 			<!--<AppenderRef ref="root" />-->
-		<!--</logger>-->
+		<!--</logger>-->````````````````````````````````````
 		<logger name="com.jd.toplife.api.util.log.JsfInvokingLogFilter" level="info" additivity="false">
 			<AppenderRef ref="jsf-log" />
 		</logger>
