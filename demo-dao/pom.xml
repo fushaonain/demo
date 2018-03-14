@@ -11,5 +11,24 @@
 
     <artifactId>demo-dao</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.liang</groupId>
+            <artifactId>demo-domain</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+    <!--<build>
+        <resources>
+            <resource>
+                <directory>src/main/java/com/liang/demo/dao</directory>
+                <includes>
+                    <include>*.xml</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>-->
+
 
 </project>
