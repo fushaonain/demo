@@ -3,4 +3,10 @@
 *.settings
 *.classpath
 *.project
-
+target/*
+demo-dao/target/*
+demo-rpc/target/*
+demo-service/target/*
+demo-util/target/*
+demo-web/target/*
+demo-domain/target/*
