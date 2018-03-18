@@ -7,6 +7,7 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -25,14 +26,10 @@ public class TestController {
 
     @RequestMapping(value = "/test")
     @ResponseBody
-    public List<User> test(){
+    public ModelAndView test(){
         logger.info("!!!!!!!!!!!!!!!!!!!!!!!!!!!test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-        List<User> users = null;
-        try {
-            users = userService.getAll();
-        } catch (Exception e) {
-            System.out.println(e);
-        }
-        return users;
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("hello");
+        return modelAndView;
     }
 }
